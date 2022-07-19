@@ -1,0 +1,78 @@
+html {
+    background-color: beige;
+    --theme-color-lighter: rgba(0, 67, 0, 0.682);
+    --theme-color-darker: rgba(0, 67, 0, 0.841);
+}
+
+img {
+    height: 500px;
+}
+
+caption {
+    font-weight: 10px;
+}
+
+div.container {
+    display: grid;
+    border: 1px dashed black;
+    margin: 10px;
+    border-radius: 5px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+header, main, footer {
+    border: 1px dashed black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+
+h2 {
+    font-size: 8px;
+    font-weight: 600;
+    margin: 10px 0 0 2px;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+input {
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+    font-size: 10px;
+}
+
+fieldset > div.left {
+    margin-right: 50px;
+}
+
+input:focus {
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.303);
+}
+
+button {
+    background-color: rgba(0, 67, 0, 0.841);
+    color: white;
+    border: none;
+    border-radius: 2px;
+    padding: 10px 20px 10px 20px;
+}
+
+button:hover {
+    background-color: var(--theme-color-lighter)
+}
+
+a {
+    text-decoration: none;
+    color: var(--theme-color-darker);
+}
+
+a:hover {
+    color: var(--theme-color-lighter)
+}
