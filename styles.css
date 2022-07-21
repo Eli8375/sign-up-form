@@ -1,67 +1,160 @@
-html {
-    background-color: beige;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+:root {
     --theme-color-lighter: rgba(0, 67, 0, 0.682);
     --theme-color-darker: rgba(0, 67, 0, 0.841);
-}
-
-img {
-    height: 500px;
-}
-
-caption {
-    font-weight: 10px;
+    --contrasting-grey-color: rgba(108, 108, 108, 0.115);
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
 }
 
 div.container {
     display: grid;
-    border: 1px dashed black;
-    margin: 10px;
+    height: 100vh;
+    width: 100vw;
     border-radius: 5px;
-    grid-template-columns: repeat(2, 1fr);
+    background-color: white;
+    grid-template-columns: 1fr 2fr;
 }
 
-header, main, footer {
-    border: 1px dashed black;
+div.container > div.hero {
+    position: relative;
+    display: flex;
+}
+
+div.container > div.info {
     display: grid;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+    grid-template-rows: 2fr 1fr 2fr;
+    font-size: 30px;
 }
 
+img.card {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+div.banner {
+    display: flex;
+    min-width: 100%;
+    justify-content: center;
+    align-self: center;
+    font-size: 100px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.347);
+    color: rgba(255, 255, 255, 0.508);
+}
+
+div.credit {
+    display: flex;
+    font-size: 15px;
+    position: absolute;
+    justify-content: center;
+    min-width: 100%;
+    color: white;
+}
+
+header, footer {
+    background-color: var(--contrasting-grey-color);
+}
+
+header {
+    display: grid;
+    align-items: flex-end;
+    padding: 40px;
+}
+
+footer {
+    display: grid;
+    align-items: flex-start;
+    padding: 40px;
+}
+
+main {
+    display: grid;
+    align-items: center;
+    padding: 0 40px 0 40px;
+}
+
+main > form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 
 h2 {
-    font-size: 8px;
-    font-weight: 600;
-    margin: 10px 0 0 2px;
+    font-size: large;
+    padding: 0px;
+    margin: 0px;
 }
-
-fieldset {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 
 input {
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.115);
-    font-size: 10px;
-}
-
-fieldset > div.left {
-    margin-right: 50px;
 }
 
 input:focus {
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.303);
+    border-radius: 2px;
 }
 
+
 button {
-    background-color: rgba(0, 67, 0, 0.841);
+    background-color: var(--theme-color-darker);
     color: white;
     border: none;
-    border-radius: 2px;
-    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+    padding: 20px 40px 20px 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 button:hover {
@@ -75,4 +168,8 @@ a {
 
 a:hover {
     color: var(--theme-color-lighter)
+}
+
+footer > form > p > a {
+    margin-left: 10px;
 }

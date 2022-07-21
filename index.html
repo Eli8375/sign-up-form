@@ -6,15 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="left">
-            <img src="/img/alexandrine-roy-cDtUCwcfXZU-unsplash.jpg" alt="nature">
-            <caption><a href="https://unsplash.com/@alexandrine_oy">Photo by Alexandrine Roy and uploaded by Unsplash</a></caption>
+        <div class="hero">
+            <img class="card" src="/img/alexandrine-roy-cDtUCwcfXZU-unsplash.jpg" alt="nature">
+            <div class="banner">
+                <h1>Sign-Up Form</h1>
+            </div>
+            <div class="credit">
+                <caption>Photo by <a href="https://unsplash.com/@alexandrine_oy">Alexandrine Roy</a> on <a href="https://unsplash.com/">Unsplash</a></caption>
+            </div>
         </div>
-        <div class="right">
+        <div class="info">
             <header>
                 <p>Welcome to this website that was designed to mimic a sign-up form
                     section. Please read the following and enter the appropriate
@@ -23,38 +31,34 @@
             </header>
             <main>
                 <form action="#">
-                    <fieldset>
-                        <legend>Sign-Up</legend>
-                        <div class="left">
-                            <label for="first-name"></label>
-                            <h2>First Name</h2>
-                            <input type="text" id="first-name" name="first-name">
-                            <label for="email"></label>
-                            <h2>Email</h2>
-                            <input type="email" id="email" name="email">
-                            <label for="password"></label>
-                            <h2>Password</h2>
-                            <input type="password" id="password" name="password">
-                        </div>
-                        <div class="right">
-                            <label for="last-name"></label>
-                            <h2>Last Name</h2>
-                            <input type="text" id="last-name" name="last-name">
-                            <label for="phone-number"></label>
-                            <h2>Phone Number</h2>
-                            <input type="text" id="phone-number" name="phone-number">
-                            <label for="confirm-password"></label>
-                            <h2>Confirm Password</h2>
-                            <input type="password" id="confirm-password" name="confirm-password">
-                        </div>
-                    </fieldset>
+                    <div class="left">
+                        <label for="first-name"></label>
+                        <h2>First Name</h2>
+                        <input type="text" id="first-name" name="first-name">
+                        <label for="email"></label>
+                        <h2>Email</h2>
+                        <input type="email" id="email" name="email">
+                        <label for="password"></label>
+                        <h2>Password</h2>
+                        <input type="password" id="password" name="password">
+                    </div>
+                    <div class="right">
+                        <label for="last-name"></label>
+                        <h2>Last Name</h2>
+                        <input type="text" id="last-name" name="last-name">
+                        <label for="phone-number"></label>
+                        <h2>Phone Number</h2>
+                        <input type="text" id="phone-number" name="phone-number">
+                        <label for="confirm-password"></label>
+                        <h2>Confirm Password</h2>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
                 </form>
             </main>
             <footer>
                 <form action="#">
                     <button type="submit">Create Account</button>
-                    <p>Already have an account?</p>
-                    <a href="#">Log in</a>
+                    <p>Already have an account?<a href="#">Log in</a></p>
                 </form>
             </footer>
         </div>
