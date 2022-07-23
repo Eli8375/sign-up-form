@@ -63,18 +63,21 @@ div.container {
     width: 100vw;
     border-radius: 5px;
     background-color: white;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 div.container > div.hero {
+    background-image: url(/img/alexandrine-roy-ZPKg0NN64oI-unsplash.jpg);
     position: relative;
     display: flex;
+    background-size: cover;
+    min-width: 60vw;
 }
 
 div.container > div.info {
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 img.card {
@@ -122,26 +125,28 @@ main {
     display: grid;
     align-items: center;
     padding: 0 40px 0 40px;
+    margin: 15px 0 15px 0;
 }
 
 main > form {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 h2 {
-    font-size: large;
-    padding: 0px;
-    margin: 0px;
+    font-size: 20px;
+    margin-top: 15px
 }
 
 input {
     border-radius: 2px;
     border: 1px solid rgba(0, 0, 0, 0.115);
+    margin-bottom: 15px;
 }
 
 input:focus {
     border-radius: 2px;
+    border: 2px blue solid;
 }
 
 
@@ -150,8 +155,8 @@ button {
     color: white;
     border: none;
     border-radius: 4px;
-    padding: 20px 40px 20px 40px;
-    font-size: 30px;
+    padding: 15px 30px 15px 30px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 20px;
     box-shadow: 1px 1px 1px 1px black;
