@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -18,25 +18,26 @@
                 <h1>Sign-Up Form</h1>
             </div>
             <div class="credit">
-                <caption>Photo by <a href="https://unsplash.com/@alexandrine_oy">Alexandrine Roy</a> on <a href="https://unsplash.com/">Unsplash</a></caption>
+                <caption>Photoby<a href="https://unsplash.com/@alexandrine_oy">Alexandrine Roy</a> on <a href="https://unsplash.com/">Unsplash</a></caption>
             </div>
         </div>
         <div class="info">
             <header>
-                <p>Welcome to this website that was designed to mimic a sign-up form
+                <p>
+                    Welcome to this website that was designed to mimic a sign-up form
                     section. Please read the following and enter the appropriate
                     information.
                 </p>
             </header>
             <main>
-                <form action="#">
+                <form action="#" id="my-form">
                     <div class="left">
                         <label for="first-name"></label>
                         <h2>First Name</h2>
-                        <input type="text" id="first-name" name="first-name">
+                        <input type="text" id="first-name" name="first-name" required placeholder='ex: "John"'>
                         <label for="email"></label>
                         <h2>Email</h2>
-                        <input type="email" id="email" name="email">
+                        <input type="email" id="email" name="email" required placeholder='ex: "johnsmith@gmail.com"'>
                         <label for="password"></label>
                         <h2>Password</h2>
                         <input type="password" id="password" name="password" required>
@@ -44,10 +45,10 @@
                     <div class="right">
                         <label for="last-name"></label>
                         <h2>Last Name</h2>
-                        <input type="text" id="last-name" name="last-name">
+                        <input type="text" id="last-name" name="last-name" required placeholder='ex: "Smith"'>
                         <label for="phone-number"></label>
                         <h2>Phone Number</h2>
-                        <input type="text" id="phone-number" name="phone-number">
+                        <input type="text" id="phone-number" name="phone-number" required placeholder='ex: "981-246-1546"'>
                         <label for="confirm-password"></label>
                         <h2>Confirm Password</h2>
                         <input type="password" id="confirm-password" name="confirm-password" required>
@@ -55,10 +56,8 @@
                 </form>
             </main>
             <footer>
-                <form action="#">
-                    <button type="submit">Create Account</button>
-                    <p>Already have an account?<a href="#">Log in</a></p>
-                </form>
+                <button type="submit" form="my-form">Create Account</button>
+                <p>Already have an account?<a href="#">Log in</a></p>
             </footer>
         </div>
     </div>

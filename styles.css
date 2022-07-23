@@ -116,7 +116,8 @@ header {
 }
 
 footer {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     padding: 40px;
 }
@@ -139,14 +140,21 @@ h2 {
 }
 
 input {
-    border-radius: 2px;
+    border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.115);
-    margin-bottom: 15px;
 }
 
 input:focus {
-    border-radius: 2px;
+    border-radius: 3px;
     border: 2px blue solid;
+}
+
+input:valid {
+    border: 3px green solid;
+}
+
+input:invalid {
+    border: 3px red solid;
 }
 
 
@@ -175,6 +183,6 @@ a:hover {
     color: var(--theme-color-lighter)
 }
 
-footer > form > p > a {
+footer > p > a {
     margin-left: 10px;
 }
