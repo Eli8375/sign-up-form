@@ -157,7 +157,7 @@ input[id="phone-number"]:valid,
 input[id="email"]:valid,
 input[id="password"]:valid {
     border-radius: 3px;
-    border: 3px green solid;
+    border: 3px #00800080 solid;
 }
 
 input[id="first-name"]:invalid:not(:focus):not(:placeholder-shown),
@@ -166,7 +166,7 @@ input[id="phone-number"]:invalid:not(:focus):not(:placeholder-shown),
 input[id="email"]:invalid:not(:focus):not(:placeholder-shown),
 input[id="password"]:invalid:not(:focus):not(:placeholder-shown) {
     border-radius: 3px;
-    border: 3px red solid;
+    border: 3px #ff000080 solid;
 }
 
 
@@ -186,6 +186,11 @@ button:hover {
     background-color: var(--theme-color-darker)
 }
 
+
+button:active {
+    background-color: rgba(0, 0, 0, 0.271);
+}
+
 a {
     text-decoration: none;
     color: var(--theme-color-lighter);
@@ -199,3 +204,6 @@ footer > p > a {
     margin-left: 10px;
 }
 
+span {
+    font-size: small;
+}
